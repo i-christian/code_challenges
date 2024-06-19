@@ -40,13 +40,14 @@ fn main() {
                     eprintln!("{}", e);
                 }
             }
+            "exit" => return,
             command => {
-                let mut child = Command::new(command)
-                    .args(args)
-                    .spawn()
-                    .expect("failed to parse command");
-
-                child.wait().expect("failed to initialise child process");
+                if let Ok(mut child) = Command::new(command).args(args).spawn() {
+                    child.wait().expect("failed to await child");
+                    child.kill().expect("command couldnt be killed");
+                } else {
+                    println!("{}: command not found", command);
+                }
             }
         }
     }

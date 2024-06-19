@@ -1,8 +1,6 @@
 use std::{
-    env,
     io::{stdin, stdout, Write},
-    path::Path,
-    process::{Child, Command, Stdio},
+    process::{self, Child, Command, Stdio},
 };
 mod buildin_handlers;
 
@@ -20,7 +18,8 @@ pub fn commands_handler(input: String) {
                 buildin_handlers::handle_cd(args);
                 previous_command = None;
             }
-            "exit" => return,
+
+            "exit" => process::exit(0x0100),
             command => {
                 let stdin = previous_command.map_or(Stdio::inherit(), |output: Child| {
                     Stdio::from(output.stdout.expect("failed to read command"))

@@ -7,23 +7,8 @@ use std::{
 
 fn main() {
     loop {
-        let output = if cfg!(target_os = "windows") {
-            Command::new("cmd")
-                .args(["/C", "echo hello"])
-                .output()
-                .expect("failed to execute process")
-        } else {
-            Command::new("sh")
-                .arg("-c")
-                .arg("echo hello")
-                .output()
-                .expect("failed to execute process")
-        };
-
-        let _hello = output.stdout;
-
         print!("$ ");
-        stdout().flush().expect("print error");
+        stdout().flush().expect("shell initiliasation failure");
 
         //running program
         let mut input = String::new();
@@ -67,9 +52,9 @@ fn main() {
 
                     match output {
                         Ok(output) => previous_command = Some(output),
-                        Err(e) => {
+                        Err(_e) => {
                             previous_command = None;
-                            eprintln!("{}", e);
+                            eprintln!("command not found");
                         }
                     }
                 }

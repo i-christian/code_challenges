@@ -1,7 +1,4 @@
-use std::{
-    io::{stdin, stdout, Write},
-    process::{self, Child, Command, Stdio},
-};
+use std::process::{self, Child, Command, Stdio};
 mod buildin_handlers;
 
 pub fn commands_handler(input: String) {
@@ -52,16 +49,5 @@ pub fn commands_handler(input: String) {
         final_command
             .wait_with_output()
             .expect("failed to wait on child");
-    }
-}
-
-pub fn runner() {
-    loop {
-        print!("$ ");
-        stdout().flush().expect("shell initiliasation failure");
-
-        let mut input = String::new();
-        stdin().read_line(&mut input).expect("failed to read input");
-        commands_handler(input);
     }
 }

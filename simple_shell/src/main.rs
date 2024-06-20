@@ -5,7 +5,7 @@ use std::io::{stdin, stdout, Write};
 fn main() {
     loop {
         print!("$ ");
-        stdout().flush().expect("shell initiliasation failure");
+        stdout().flush().expect("shell initialisation failure");
 
         let mut input = String::new();
         stdin().read_line(&mut input).expect("failed to read input");

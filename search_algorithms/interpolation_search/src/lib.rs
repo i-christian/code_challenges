@@ -47,6 +47,14 @@ mod tests {
     }
 
     #[test]
+    fn test_one_item() {
+        let list = vec![0];
+        let item = 0;
+        let result = interpolation(list, item);
+        assert_eq!(result, Some(0));
+    }
+
+    #[test]
     fn test_i32() {
         let list: Vec<i32> = vec![-10, -5, 0, 5, 10];
         let item = 0;

@@ -7,28 +7,29 @@ pub fn exponential_search(list: Vec<i32>, target: i32) -> Option<usize> {
         return Some(0);
     }
 
-    // set up jumps
     let mut idx: usize = 1;
     let mut jump = idx.pow(2);
 
-    while list[jump] <= target && jump < list.len() {
-        idx = idx + 1;
+    while jump < list.len() && list[jump] <= target {
+        idx += 1;
         jump = idx.pow(2);
+    }
 
-        //lets perform binary search
-        let mut low = 0;
-        let mut high = list.len() - 1;
-        while low <= high {
-            let mid = low + (high - low) / 2;
-            if list[mid] == target {
-                return Some(mid);
-            } else if list[mid] < target {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
+    // Perform binary search in the range [2^(idx-1), min(2^idx, list.len())]
+    let mut low = 2usize.pow(idx as u32 - 1);
+    let mut high = usize::min(jump, list.len() - 1);
+
+    while low <= high {
+        let mid = low + (high - low) / 2;
+        if list[mid] == target {
+            return Some(mid);
+        } else if list[mid] < target {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
         }
     }
+
     None
 }
 

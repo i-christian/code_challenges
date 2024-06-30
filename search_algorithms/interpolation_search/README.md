@@ -16,9 +16,11 @@ Interpolation Search is suitable for searching elements in a sorted array when:
 2. **Search Phase**:
    - While `low` is less than or equal to `high` and the target is within the bounds defined by `list[low]` and `list[high]`:
      - Calculate the estimated position (`pos`) using the formula:
-       \[
-       \text{pos} = \text{low} + \frac{(\text{target} - \text{list[low]}) \times (\text{high} - \text{low})}{\text{list[high]} - \text{list[low]}}
-       \]
+
+       ```
+       pos = low + ((target - list[low]) * (high - low)) / (list[high] - list[low])
+       ```
+
      - If `list[pos]` equals the target, return `Some(pos)`.
      - If `list[pos]` is less than the target, update `low` to `pos + 1`.
      - If `list[pos]` is greater than the target, update `high` to `pos - 1`.

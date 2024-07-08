@@ -17,10 +17,7 @@ pub fn quicksort(mut array: Vec<i32>) -> Vec<i32> {
         }
 
         // reassemble the array
-        let mut sorted = quicksort(less);
-        sorted.push(pivot);
-        sorted.extend(quicksort(greater));
-
+        let sorted = vec![quicksort(less), vec![pivot], quicksort(greater)].concat();
         sorted
     }
 }

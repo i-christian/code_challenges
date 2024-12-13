@@ -1,24 +1,23 @@
-use sqlite::{self, Connection, Row};
+use sqlite::{self, Connection};
 
 fn main() {
     let connection = sqlite::open("sample.db").expect("Failed to initialise dabase");
     create_users(&connection);
-    get_user(&connection, 1);
-    println!("Print all user before an update");
+    println!("Print a user before an update");
     get_user(&connection, 2);
     update_user(&connection, 2);
-    println!("Print all user after an update");
+    println!("Print a user after an update");
     get_user(&connection, 2);
 
-    println!("Print all users:");
-    // get all users in the database
-    let users = get_users(&connection);
-    for user in users {
-        println!("name = {}", user.read::<&str, _>("name"));
-        println!("age = {}", user.read::<i64, _>("age"));
-    }
+    println!("Print all users before a deletion:");
+    get_users(&connection);
+
+    delete_user(&connection, 1);
+    println!("Print all users after a deletion");
+    get_users(&connection);
 }
 
+// Create users
 fn create_users(con: &Connection) {
     let query = "
         CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY ASC, name TEXT, age INTEGER);
@@ -29,9 +28,9 @@ fn create_users(con: &Connection) {
     con.execute(query).expect("failed to run querry");
 }
 
-fn get_users(con: &Connection) -> Vec<Row> {
+// Retrieve all users in the database
+fn get_users(con: &Connection) {
     let query = "SELECT * FROM users";
-    let mut users = Vec::new();
 
     for user in con
         .prepare(query)
@@ -39,12 +38,12 @@ fn get_users(con: &Connection) -> Vec<Row> {
         .into_iter()
         .map(|user| user.unwrap())
     {
-        users.push(user)
+        println!("name = {}", user.read::<&str, _>("name"));
+        println!("age = {}", user.read::<i64, _>("age"));
     }
-
-    users
 }
 
+// Get a single user given an id
 fn get_user(con: &Connection, id: i64) {
     let query = "SELECT * FROM users WHERE id = ?";
 
@@ -61,7 +60,22 @@ fn get_user(con: &Connection, id: i64) {
     }
 }
 
+// Update a user given an id
 fn update_user(con: &Connection, id: i64) {
-    let query = format!("UPDATE users SET name = Boruto WHERE id = {:?}", id);
+    let query = format!(
+        "UPDATE users SET name = '{}', age = {:?} WHERE id = {:?}",
+        "Boruto", 16, id
+    );
     con.execute(query).expect("Failed to update");
+}
+
+// Delete a user given an id
+fn delete_user(con: &Connection, id: i64) {
+    let query = format!(
+        "
+            DELETE FROM users WHERE id = {:?}
+        ",
+        id
+    );
+    con.execute(query).expect("Failed to delete user");
 }

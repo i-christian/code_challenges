@@ -6,7 +6,7 @@ pub fn commands_handler(input: String) {
     let mut previous_command = None;
 
     while let Some(command) = commands.next() {
-        let mut parts = command.trim().split_whitespace();
+        let mut parts = command.split_whitespace();
         let command = parts.next().expect("Failed to split command");
         let args = parts;
 

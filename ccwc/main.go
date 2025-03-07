@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"log/slog"
 	"os"
@@ -30,12 +31,33 @@ func processFlags(flag, fileName string) (int, error) {
 	return result, err
 }
 
+// handlePipes function reads from os.Stdin and creates a temp file for the program to use instead
+func handlePipes() string {
+	tempFile := "./temp.txt"
+	stat, _ := os.Stdin.Stat()
+	if (stat.Mode() & os.ModeCharDevice) == 0 {
+		stdInFile, err := io.ReadAll(os.Stdin)
+		if err != nil {
+			fmt.Println(err)
+		}
+		err = os.WriteFile(tempFile, stdInFile, 0o555)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+
+	return tempFile
+}
+
 // define main for the application to recieve command line args ()
 func main() {
 	args := os.Args
 	if len(args) <= 1 {
 		log.Fatal("Not enough arguments")
 	}
+
+	tempFile := handlePipes()
+	defer os.Remove(tempFile)
 
 	countSlice := make([]int, 0)
 	defaultFlags := []string{"-l", "-w", "-c"}
@@ -61,7 +83,13 @@ func main() {
 
 			countSlice = append(countSlice, result)
 		} else {
-			fmt.Println("Too many command line arguments")
+			fileName = tempFile
+			result, err := processFlags(args[1], fileName)
+			if err != nil {
+				slog.Error("An error occured", "error", err.Error())
+			}
+
+			fmt.Printf("   %d\n", result)
 			return
 		}
 	}

@@ -1,1 +1,1 @@
-# rust_series
+# Coding Challenges

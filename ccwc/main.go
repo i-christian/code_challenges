@@ -24,19 +24,43 @@ func countLines(fileName string) (int, error) {
 		return 0, err
 	}
 
-	lineList := []string{}
 	defer f.Close()
 
 	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanLines)
+	lineCount := 0
 	for scanner.Scan() {
-		lineList = append(lineList, scanner.Text())
+		lineCount++
 	}
 
 	if err := scanner.Err(); err != nil {
 		return 0, err
 	}
 
-	return len(lineList), nil
+	return lineCount, nil
+}
+
+// countWords function returns the total word count in a file
+func countWords(fileName string) (int, error) {
+	f, err := os.Open(fileName)
+	if err != nil {
+		return 0, nil
+	}
+
+	wordCount := 0
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanWords)
+	for scanner.Scan() {
+		wordCount++
+	}
+
+	if err := scanner.Err(); err != nil {
+		return 0, err
+	}
+
+	return wordCount, nil
 }
 
 // define main for the application to recieve command line args ()
@@ -50,6 +74,7 @@ func main() {
 	mappedCommands := make(map[string]func(string) (int, error))
 	mappedCommands["-c"] = countBytes
 	mappedCommands["-l"] = countLines
+	mappedCommands["-w"] = countWords
 
 	result, err := mappedCommands[args[1]](args[2])
 	if err != nil {

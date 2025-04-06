@@ -26,6 +26,11 @@ pub fn process_flags<T: AsRef<str>>(flag: T, file_name: T) -> Option<usize> {
 
     let commands = define_mappings();
 
+    if !commands.contains_key(flag.as_ref()) {
+        eprintln!("Invalid flag use one of the following (c, l, w, m) Or ommit flags entirely");
+        return None;
+    }
+
     let result = match &mut file {
         Ok(file) => {
             let count = commands[flag.as_ref()](file);

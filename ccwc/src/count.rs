@@ -13,6 +13,7 @@ fn define_mappings() -> HashMap<String, fn(&mut File) -> usize> {
     mapped_command.insert("-c".to_string(), count_bytes);
     mapped_command.insert("-l".to_string(), count_lines);
     mapped_command.insert("-w".to_string(), count_words);
+    mapped_command.insert("-m".to_string(), count_characters);
 
     mapped_command
 }
@@ -69,4 +70,20 @@ fn count_words(file: &mut File) -> usize {
         total_count += words_per_line;
     }
     total_count
+}
+
+//count_characters function accepts a file reference and returns word count
+fn count_characters(file: &mut File) -> usize {
+    let mut buf = BufReader::new(file);
+    let mut contents = String::new();
+
+    let count = match buf.read_to_string(&mut contents) {
+        Ok(_) => {
+            let count = contents.chars().count();
+            return count;
+        }
+        Err(_) => 0,
+    };
+
+    count
 }

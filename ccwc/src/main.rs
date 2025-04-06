@@ -13,7 +13,7 @@ fn main() {
     let file_name = &args[2];
 
     if let Some(count) = count::process_flags(flag, file_name) {
-        println!("{} {}", count, args[2]);
+        println!("    {} {}", count, args[2]);
     } else {
         eprint!("Failed to process file")
     }

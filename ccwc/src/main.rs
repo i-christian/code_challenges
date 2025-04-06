@@ -11,9 +11,7 @@ mod count;
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() <= 1 {
-        eprintln!(
-            "\nUsage: ./target/debug/ccwc [flag] [file name] \nOr cat [filename](optional) | ./target/debug/ccwc[flag]"
-        );
+        eprintln!("{}", count::help());
         exit(1)
     }
 
@@ -29,7 +27,7 @@ fn main() {
             }
 
             2 => {
-                if args.len() == 2 && !args[1].contains("-") {
+                if !args[1].contains("-") {
                     for flag in flags {
                         if let Some(count) = count::process_flags(flag, &args[1]) {
                             count_value.push(count);
@@ -39,6 +37,9 @@ fn main() {
                         "    {}  {}  {}  {}",
                         count_value[0], count_value[1], count_value[2], args[1]
                     );
+                } else if args[1].contains("-") {
+                    eprintln!("{}", count::help());
+                    exit(1);
                 } else {
                     let _ = File::create("temp.txt");
                     let mut buffer = String::new();
@@ -60,7 +61,7 @@ fn main() {
                     fs::remove_file("temp.txt").expect("failed to remove temp file");
                 }
             }
-            _ => println!("Help: ./target/debug/ccwc [flag] [file name]"),
+            _ => eprintln!("{}", count::help()),
         }
     }
 }

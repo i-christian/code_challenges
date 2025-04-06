@@ -5,6 +5,12 @@ use std::{
     io::{BufRead, BufReader, Read},
 };
 
+// help function provide the application help text
+pub fn help() -> String {
+    let text = "\nUsage: ./target/debug/ccwc [flag] [file name] \nOr cat [filename](optional) | ./target/debug/ccwc[flag]".to_string();
+    text
+}
+
 // define_mappings links a particular flag to a function that handles it
 fn define_mappings() -> HashMap<String, fn(&mut File) -> usize> {
     type Processor = fn(&mut File) -> usize;
@@ -27,7 +33,7 @@ pub fn process_flags<T: AsRef<str>>(flag: T, file_name: T) -> Option<usize> {
     let commands = define_mappings();
 
     if !commands.contains_key(flag.as_ref()) {
-        eprintln!("Invalid flag use one of the following (c, l, w, m) Or ommit flags entirely");
+        eprintln!("{}", help());
         return None;
     }
 

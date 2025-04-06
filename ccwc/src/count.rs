@@ -12,6 +12,7 @@ fn define_mappings() -> HashMap<String, fn(&mut File) -> usize> {
 
     mapped_command.insert("-c".to_string(), count_bytes);
     mapped_command.insert("-l".to_string(), count_lines);
+    mapped_command.insert("-w".to_string(), count_words);
 
     mapped_command
 }
@@ -39,11 +40,10 @@ pub fn process_flags(flag: &str, file_name: &str) -> Option<usize> {
 
 // count_bytes function accepts a mutable reference to a file and returns byte count of a file
 fn count_bytes(file: &mut File) -> usize {
-    let mut buf = Vec::new();
-    let count = file
-        .read_to_end(&mut buf)
-        .expect("Failed to read file into buffer");
-    count
+    let buf = BufReader::new(file);
+
+    let byte_count = buf.bytes().count();
+    byte_count
 }
 
 //count_lines function accepts a mutable reference to a file and returns line count of a file
@@ -52,4 +52,21 @@ fn count_lines(file: &mut File) -> usize {
 
     let line_count = buf.lines().count();
     line_count
+}
+
+//count_words function accepts a file reference and returns word count
+fn count_words(file: &mut File) -> usize {
+    let buf = BufReader::new(file);
+
+    let mut total_count = 0;
+    let mut words_per_line = 0;
+
+    for line in buf.lines() {
+        if let Ok(line) = line {
+            words_per_line = line.split_whitespace().count();
+        }
+
+        total_count += words_per_line;
+    }
+    total_count
 }

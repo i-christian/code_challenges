@@ -1,3 +1,4 @@
+use core::str;
 use std::{
     collections::HashMap,
     fs::File,
@@ -20,14 +21,14 @@ fn define_mappings() -> HashMap<String, fn(&mut File) -> usize> {
 
 // process_flags functions accepts flags and file name.
 // It calls the corresponding function to process the file and return the result.
-pub fn process_flags(flag: &str, file_name: &str) -> Option<usize> {
-    let mut file = File::open(file_name);
+pub fn process_flags<T: AsRef<str>>(flag: T, file_name: T) -> Option<usize> {
+    let mut file = File::open(file_name.as_ref());
 
     let commands = define_mappings();
 
     let result = match &mut file {
         Ok(file) => {
-            let count = commands[flag](file);
+            let count = commands[flag.as_ref()](file);
             Some(count)
         }
         Err(e) => {

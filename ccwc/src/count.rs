@@ -7,7 +7,7 @@ use std::{
 
 // help function provide the application help text
 pub fn help() -> String {
-    let text = "\nUsage: ./target/debug/ccwc [flag] [file name] \nOr cat [filename](optional) | ./target/debug/ccwc[flag]".to_string();
+    let text = "\nUsage: ./target/debug/ccwc [flag](optional) [file name] \nOr cat [filename] | ./target/debug/ccwc[flag]".to_string();
     text
 }
 

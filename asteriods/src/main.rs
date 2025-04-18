@@ -1,9 +1,11 @@
 use bevy::prelude::*;
+mod camera;
 mod components;
 mod debug;
 mod movement;
 mod spaceship;
 
+use camera::CameraPlugin;
 use debug::DebugPlugin;
 use movement::MovementPlugin;
 use spaceship::SpaceshipPlugin;
@@ -11,7 +13,12 @@ use spaceship::SpaceshipPlugin;
 /// main is the entry point of the game logic
 fn main() {
     App::new()
-        .insert_resource(ClearColor(Color::srgb(0.04, 0.04, 0.04)))
+        .insert_resource(ClearColor(Color::srgb(0.01, 0.00, 0.15)))
+        .insert_resource(AmbientLight {
+            color: Color::default(),
+            brightness: 100.0,
+        })
+        .add_plugins(CameraPlugin)
         .add_plugins(SpaceshipPlugin)
         .add_plugins(MovementPlugin)
         .add_plugins(DebugPlugin)

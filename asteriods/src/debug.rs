@@ -8,6 +8,7 @@ impl Plugin for DebugPlugin {
     }
 }
 
+// print debugging information (location of the spaceship)
 fn print_position(query: Query<(Entity, &Transform)>) {
     for (entity, transform) in query.iter() {
         info!("Entity {:?} is at position {:?},", entity, transform);

@@ -10,6 +10,7 @@ impl Plugin for MovementPlugin {
     }
 }
 
+/// updates the position of [`Spaceship`]
 fn update_position(mut query: Query<(&Velocity, &mut Transform)>, time: Res<Time>) {
     for (velocity, mut transform) in query.iter_mut() {
         transform.translation += velocity.value * time.delta_secs();

@@ -9,6 +9,8 @@ impl Plugin for CameraPlugin {
     }
 }
 
+/// spawns a 3D camera entity into the game world
+/// # accepts [`commands`] as an argument
 fn spawn_camera(mut commands: Commands) {
     commands.spawn((
         Camera3d::default(),

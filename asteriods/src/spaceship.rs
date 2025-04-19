@@ -20,6 +20,7 @@ impl Plugin for SpaceshipPlugin {
     }
 }
 
+/// spawns a spaceship entity into the game world
 fn spawn_spaceship(mut commands: Commands, asset_server: Res<AssetServer>) {
     commands.spawn(SpaceshipBundle {
         velocity: Velocity {

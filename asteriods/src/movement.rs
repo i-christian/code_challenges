@@ -1,12 +1,18 @@
 use bevy::prelude::*;
 
-use crate::components::Velocity;
+use crate::components::{Acceleration, Velocity};
 
 pub struct MovementPlugin;
 
 impl Plugin for MovementPlugin {
     fn build(&self, app: &mut App) {
         app.add_systems(Update, update_position);
+    }
+}
+
+impl Acceleration {
+    pub fn new(value: Vec3) -> Self {
+        Self { value }
     }
 }
 

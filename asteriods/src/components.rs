@@ -5,3 +5,9 @@ use bevy::prelude::*;
 pub struct Velocity {
     pub value: Vec3,
 }
+
+// Acceleraration component
+#[derive(Component, Debug)]
+pub struct Acceleration {
+    pub value: Vec3,
+}

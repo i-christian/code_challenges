@@ -1,16 +1,9 @@
-use crate::components::Velocity;
+use crate::components::{Acceleration, MovingObjectBundle, Velocity};
 use bevy::prelude::*;
 
 /// Spaceship constants
-const STARTING_TRANSLATION: Vec3 = Vec3::new(0.0, 0.0, -20.0);
+const SPACESHIP_STARTING_TRANSLATION: Vec3 = Vec3::new(0.0, 0.0, -20.0);
 const STARTING_VELOCITY: Vec3 = Vec3::new(0.0, 0.0, 1.0);
-
-#[derive(Bundle)]
-struct SpaceshipBundle {
-    velocity: Velocity,
-    transform: Transform,
-    model: SceneRoot,
-}
 
 pub struct SpaceshipPlugin;
 
@@ -22,11 +15,12 @@ impl Plugin for SpaceshipPlugin {
 
 /// spawns a spaceship entity into the game world
 fn spawn_spaceship(mut commands: Commands, asset_server: Res<AssetServer>) {
-    commands.spawn(SpaceshipBundle {
+    commands.spawn(MovingObjectBundle {
         velocity: Velocity {
             value: STARTING_VELOCITY,
         },
-        transform: Transform::from_translation(STARTING_TRANSLATION),
+        acceleration: Acceleration::new(Vec3::ZERO),
+        transform: Transform::from_translation(SPACESHIP_STARTING_TRANSLATION),
         model: SceneRoot(asset_server.load(GltfAssetLabel::Scene(0).from_asset("Spaceship.glb"))),
     });
 }

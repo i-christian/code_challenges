@@ -1,10 +1,12 @@
 use bevy::prelude::*;
+mod asteroids;
 mod camera;
 mod components;
 mod debug;
 mod movement;
 mod spaceship;
 
+use asteroids::AsteroidPlugin;
 use camera::CameraPlugin;
 use debug::DebugPlugin;
 use movement::MovementPlugin;
@@ -22,6 +24,7 @@ fn main() {
         .add_plugins(SpaceshipPlugin)
         .add_plugins(MovementPlugin)
         .add_plugins(DebugPlugin)
+        .add_plugins(AsteroidPlugin)
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {
                 resolution: (840.0, 480.0).into(),

@@ -20,3 +20,11 @@ pub struct MovingObjectBundle {
     pub transform: Transform,
     pub model: SceneRoot,
 }
+
+/// spaceship marker component
+#[derive(Component, Debug)]
+pub struct Spaceship;
+
+// Asteroid marker component
+#[derive(Component, Debug)]
+pub struct Asteroid;

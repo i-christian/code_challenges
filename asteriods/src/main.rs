@@ -22,12 +22,6 @@ fn main() {
             color: Color::default(),
             brightness: 100.0,
         })
-        .add_plugins(CameraPlugin)
-        .add_plugins(AssetLoaderPlugin)
-        .add_plugins(SpaceshipPlugin)
-        .add_plugins(MovementPlugin)
-        .add_plugins(DebugPlugin)
-        .add_plugins(AsteroidPlugin)
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {
                 resolution: (840.0, 480.0).into(),
@@ -36,5 +30,12 @@ fn main() {
             }),
             ..default()
         }))
+        // User defined plugins
+        .add_plugins(CameraPlugin)
+        .add_plugins(AssetLoaderPlugin)
+        .add_plugins(SpaceshipPlugin)
+        .add_plugins(MovementPlugin)
+        .add_plugins(DebugPlugin)
+        .add_plugins(AsteroidPlugin)
         .run();
 }

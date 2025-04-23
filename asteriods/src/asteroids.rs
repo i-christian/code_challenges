@@ -12,6 +12,7 @@ const ACCELERATION_SCALAR: f32 = 1.0;
 const SPAWN_RANGE_X: Range<f32> = -25.0..25.0;
 const SPAWN_RANGE_Z: Range<f32> = 0.0..25.0;
 const SPAWN_TIME_SECONDS: f32 = 1.0;
+const ROTATE_SPEED: f32 = 2.5;
 
 #[derive(Resource, Debug)]
 pub struct SpawnTimer {
@@ -25,7 +26,10 @@ impl Plugin for AsteroidPlugin {
         app.insert_resource(SpawnTimer {
             timer: Timer::from_seconds(SPAWN_TIME_SECONDS, TimerMode::Repeating),
         })
-        .add_systems(Update, spawn_asteroid);
+        .add_systems(
+            Update,
+            (spawn_asteroid, rotate_asteroids, handle_asteroid_collision),
+        );
     }
 }
 
@@ -69,6 +73,13 @@ fn spawn_asteroid(
         },
         Asteroid,
     ));
+}
+
+/// asteroids rotation system
+fn rotate_asteroids(mut query: Query<&mut Transform, With<Asteroid>>, time: Res<Time>) {
+    for mut transform in query.iter_mut() {
+        transform.rotate_local_z(ROTATE_SPEED * time.delta_secs());
+    }
 }
 
 /// asteroid collision system

@@ -4,7 +4,7 @@ use bevy::prelude::*;
 
 use crate::{
     asset_loader::SceneAssets,
-    components::{Acceleration, Asteroid, MovingObjectBundle, Velocity},
+    components::{Acceleration, Asteroid, Collider, MovingObjectBundle, Velocity},
 };
 
 const VELOCITY_SCALAR: f32 = 5.0;
@@ -69,4 +69,22 @@ fn spawn_asteroid(
         },
         Asteroid,
     ));
+}
+
+/// asteroid collision system
+fn handle_asteroid_collision(
+    mut commands: Commands,
+    query: Query<(Entity, &Collider), With<Asteroid>>,
+) {
+    for (entity, collider) in query.iter() {
+        for &collided_entity in collider.colliding_entities.iter() {
+            // Asteroid collided with another asteroid
+            if query.get(collided_entity).is_ok() {
+                continue;
+            }
+
+            // Despawn the asteroid.
+            commands.entity(entity).despawn_recursive();
+        }
+    }
 }

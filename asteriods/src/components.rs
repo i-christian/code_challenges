@@ -32,3 +32,9 @@ pub struct SpaceshipMissile;
 // Asteroid marker component
 #[derive(Component, Debug)]
 pub struct Asteroid;
+
+#[derive(Component, Debug)]
+pub struct Collider {
+    pub radius: f32,
+    pub colliding_entities: Vec<Entity>,
+}

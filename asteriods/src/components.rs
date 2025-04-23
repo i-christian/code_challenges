@@ -17,6 +17,7 @@ pub struct Acceleration {
 pub struct MovingObjectBundle {
     pub velocity: Velocity,
     pub acceleration: Acceleration,
+    pub collider: Collider,
     pub transform: Transform,
     pub model: SceneRoot,
 }

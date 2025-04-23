@@ -1,6 +1,8 @@
 use crate::{
     asset_loader::SceneAssets,
-    components::{Acceleration, MovingObjectBundle, Spaceship, SpaceshipMissile, Velocity},
+    components::{
+        Acceleration, Collider, MovingObjectBundle, Spaceship, SpaceshipMissile, Velocity,
+    },
 };
 use bevy::prelude::*;
 
@@ -11,6 +13,8 @@ const SPACESHIP_ROTATION_SPEED: f32 = 2.5;
 const SPACESHIP_ROLL_SPEED: f32 = 2.5;
 const MISSILE_SPEED: f32 = 50.0;
 const MISSILE_FORWARD_SPAWN_SCALAR: f32 = 7.5;
+const MISSILE_RADIUS: f32 = 1.0;
+const SPACESHIP_RADIUS: f32 = 5.0;
 
 pub struct SpaceshipPlugin;
 
@@ -29,6 +33,7 @@ fn spawn_spaceship(mut commands: Commands, scene_assets: Res<SceneAssets>) {
         MovingObjectBundle {
             velocity: Velocity { value: Vec3::ZERO },
             acceleration: Acceleration::new(Vec3::ZERO),
+            collider: Collider::new(SPACESHIP_RADIUS),
             transform: Transform::from_translation(SPACESHIP_STARTING_TRANSLATION),
             model: SceneRoot(scene_assets.spaceship.clone()),
         },
@@ -90,6 +95,7 @@ fn spaceship_weapon_controls(
                     value: -transform.forward() * MISSILE_SPEED,
                 },
                 acceleration: Acceleration::new(Vec3::ZERO),
+                collider: Collider::new(MISSILE_RADIUS),
                 transform: Transform::from_translation(
                     transform.translation + -transform.forward() * MISSILE_FORWARD_SPAWN_SCALAR,
                 ),

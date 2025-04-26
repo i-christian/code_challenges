@@ -26,6 +26,10 @@ pub struct MovingObjectBundle {
 #[derive(Component, Debug)]
 pub struct Spaceship;
 
+/// spaceship shield component
+#[derive(Component, Debug)]
+pub struct SpaceshipShield;
+
 /// spaceship missile marker component
 #[derive(Component, Debug)]
 pub struct SpaceshipMissile;

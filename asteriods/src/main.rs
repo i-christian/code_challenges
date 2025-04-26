@@ -8,6 +8,7 @@ mod components;
 mod debug;
 mod despawn;
 mod movement;
+mod schedule;
 mod spaceship;
 
 use asteroids::AsteroidPlugin;
@@ -16,6 +17,7 @@ use collision_detection::CollisionDetectionPlugin;
 use debug::DebugPlugin;
 use despawn::DespawnPlugin;
 use movement::MovementPlugin;
+use schedule::SchedulePlugin;
 use spaceship::SpaceshipPlugin;
 
 /// main is the entry point of the game logic
@@ -44,5 +46,6 @@ fn main() {
         .add_plugins(AsteroidPlugin)
         .add_plugins(DespawnPlugin)
         .add_plugins(CollisionDetectionPlugin)
+        .add_plugins(SchedulePlugin)
         .run();
 }

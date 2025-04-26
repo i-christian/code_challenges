@@ -25,6 +25,7 @@ fn main() {
         .insert_resource(AmbientLight {
             color: Color::default(),
             brightness: 100.0,
+            affects_lightmapped_meshes: true,
         })
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {

@@ -97,7 +97,7 @@ fn handle_asteroid_collision(
             }
 
             // Despawn the asteroid.
-            commands.entity(entity).despawn_recursive();
+            commands.entity(entity).despawn();
         }
     }
 }

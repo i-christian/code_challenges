@@ -17,7 +17,7 @@ fn despawn_far_away_entities(mut commands: Commands, query: Query<(Entity, &Glob
 
         // entity far away from camera's viewport
         if distance > DESPAWN_DISTANCE {
-            commands.entity(entity).despawn_recursive();
+            commands.entity(entity).despawn();
         }
     }
 }

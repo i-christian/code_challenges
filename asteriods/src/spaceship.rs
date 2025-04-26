@@ -47,7 +47,10 @@ fn spaceship_movement_controls(
     keyboard_input: Res<ButtonInput<KeyCode>>,
     time: Res<Time>,
 ) {
-    let (mut transform, mut velocity) = query.single_mut();
+    let (mut transform, mut velocity) = query
+        .single_mut()
+        .expect("Error: could not find a single spaceship");
+
     let mut rotation = 0.0;
     let mut roll = 0.0;
     let mut movement = 0.0;
@@ -87,7 +90,9 @@ fn spaceship_weapon_controls(
     keyboard_input: Res<ButtonInput<KeyCode>>,
     scene_assets: Res<SceneAssets>,
 ) {
-    let transform = query.single();
+    let transform = query
+        .single()
+        .expect("Error: could not find a single spaceship");
     if keyboard_input.pressed(KeyCode::Space) {
         commands.spawn((
             MovingObjectBundle {

@@ -1,8 +1,8 @@
 use crate::{
     asset_loader::SceneAssets,
     components::{
-        Acceleration, Collider, MovingObjectBundle, Spaceship, SpaceshipMissile, SpaceshipShield,
-        Velocity,
+        Acceleration, Collider, CollisionDamage, Health, MovingObjectBundle, Spaceship,
+        SpaceshipMissile, SpaceshipShield, Velocity,
     },
     schedule::InGameSet,
 };
@@ -17,6 +17,10 @@ const MISSILE_SPEED: f32 = 50.0;
 const MISSILE_FORWARD_SPAWN_SCALAR: f32 = 7.5;
 const MISSILE_RADIUS: f32 = 1.0;
 const SPACESHIP_RADIUS: f32 = 5.0;
+const SPACESHIP_HEALTH: f32 = 100.0;
+const SPACESHIP_COLLISION_DAMAGE: f32 = 100.0;
+const MISSILE_HEALTH: f32 = 1.0;
+const MISSILE_COLLISION_DAMAGE: f32 = 5.0;
 
 pub struct SpaceshipPlugin;
 
@@ -46,6 +50,8 @@ fn spawn_spaceship(mut commands: Commands, scene_assets: Res<SceneAssets>) {
             model: SceneRoot(scene_assets.spaceship.clone()),
         },
         Spaceship,
+        Health::new(SPACESHIP_HEALTH),
+        CollisionDamage::new(SPACESHIP_COLLISION_DAMAGE),
     ));
 }
 
@@ -116,6 +122,8 @@ fn spaceship_weapon_controls(
                 model: SceneRoot(scene_assets.missiles.clone()),
             },
             SpaceshipMissile,
+            Health::new(MISSILE_HEALTH),
+            CollisionDamage::new(MISSILE_COLLISION_DAMAGE),
         ));
     }
 }

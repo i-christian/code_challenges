@@ -7,6 +7,7 @@ mod collision_detection;
 mod components;
 mod debug;
 mod despawn;
+mod health;
 mod movement;
 mod schedule;
 mod spaceship;

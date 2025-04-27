@@ -38,8 +38,21 @@ pub struct SpaceshipMissile;
 #[derive(Component, Debug)]
 pub struct Asteroid;
 
+/// Collider component
 #[derive(Component, Debug)]
 pub struct Collider {
     pub radius: f32,
     pub colliding_entities: Vec<Entity>,
+}
+
+/// Health component
+#[derive(Component, Debug)]
+pub struct Health {
+    pub value: f32,
+}
+
+/// collision damage component
+#[derive(Component, Debug)]
+pub struct CollisionDamage {
+    pub amount: f32,
 }

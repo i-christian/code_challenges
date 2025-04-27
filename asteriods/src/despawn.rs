@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-use crate::{components::Health, schedule::InGameSet};
+use crate::{components::Health, schedule::InGameSet, state::GameState};
 
 const DESPAWN_DISTANCE: f32 = 100.0;
 
@@ -11,7 +11,8 @@ impl Plugin for DespawnPlugin {
         app.add_systems(
             Update,
             (despawn_far_away_entities, despawn_dead_entities).in_set(InGameSet::DespawnEntities),
-        );
+        )
+        .add_systems(OnEnter(GameState::GameOver), despawn_all_entities);
     }
 }
 
@@ -33,5 +34,12 @@ fn despawn_dead_entities(mut commands: Commands, query: Query<(Entity, &Health)>
         if health.value <= 0.0 {
             commands.entity(entity).despawn();
         }
+    }
+}
+
+/// a system to restart game objects after gameover event
+fn despawn_all_entities(mut commands: Commands, query: Query<Entity, With<Health>>) {
+    for entity in query.iter() {
+        commands.entity(entity).despawn();
     }
 }

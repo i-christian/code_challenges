@@ -10,6 +10,7 @@ mod despawn;
 mod movement;
 mod schedule;
 mod spaceship;
+mod state;
 
 use asteroids::AsteroidPlugin;
 use camera::CameraPlugin;
@@ -19,6 +20,7 @@ use despawn::DespawnPlugin;
 use movement::MovementPlugin;
 use schedule::SchedulePlugin;
 use spaceship::SpaceshipPlugin;
+use state::StatePlugin;
 
 /// main is the entry point of the game logic
 fn main() {
@@ -47,5 +49,6 @@ fn main() {
         .add_plugins(DespawnPlugin)
         .add_plugins(CollisionDetectionPlugin)
         .add_plugins(SchedulePlugin)
+        .add_plugins(StatePlugin)
         .run();
 }

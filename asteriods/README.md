@@ -8,3 +8,16 @@ This challenge is to build your own version of the classic arcade game Asteroids
   ```
     cargo run
   ```
+
+- Game Control keys
+ ```
+  w (upward)
+  
+  s (downward)
+ 
+  a & d (spaceship rotation)
+  
+  esc (pause/play game)
+
+  space (shoot missiles)
+```

@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"io/fs"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -55,4 +57,63 @@ func SingleLetter(file *os.File, flag string) {
 		}
 		os.Exit(0)
 	}
+}
+
+// Recursive supports the goal to recurse a directory tree
+func Recursive(word string) {
+	filePath := "."
+	files := findFiles(filePath)
+	buf := make([]string, 0)
+
+	for _, file := range files {
+		f, err := os.Open(file)
+		if err != nil {
+			fmt.Println(err.Error())
+			continue
+		}
+
+		reader := bufio.NewReader(f)
+
+		for {
+			line, err := reader.ReadString('\n')
+			if err == io.EOF {
+				break
+			}
+			if err != nil {
+				fmt.Println(err)
+				continue
+			}
+
+			if strings.Contains(line, word) {
+				buf = append(buf, fmt.Sprintf("%s:%s", file, line))
+			}
+		}
+
+	}
+
+	if len(buf) == 0 {
+		os.Exit(1)
+	} else {
+		for _, line := range buf {
+			fmt.Print(line)
+		}
+		os.Exit(0)
+	}
+}
+
+func findFiles(rootPath string) []string {
+	files := make([]string, 0)
+	filepath.WalkDir(rootPath, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+
+		if !d.IsDir() {
+			files = append(files, path)
+		}
+
+		return nil
+	})
+
+	return files
 }

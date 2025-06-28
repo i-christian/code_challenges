@@ -17,3 +17,24 @@ The Unix command line tools are a great metaphor for good software engineering a
      Each input line that matches at least one of the patterns is written to
      the standard output.
 ```
+
+## How to Use 🛠️
+- Compile the project: `go build .`
+## Running examples:
+- Basic search
+  ```
+    $ ./gogrep J rockbands.txt
+    Judas Priest
+    Bon Jovi
+    Junkyard
+  ```
+- Recursive search option
+  ```
+   $ ./gogrep -r Nirvana *
+  rockbands.txt:Nirvana
+  test-subdir/BFS1985.txt:Since Bruce Springsteen, Madonna, way before Nirvana
+  test-subdir/BFS1985.txt:On the radio was Springsteen, Madonna, way before Nirvana
+  test-subdir/BFS1985.txt:And bring back Springsteen, Madonna, way before Nirvana
+  test-subdir/BFS1985.txt:Bruce Springsteen, Madonna, way before Nirvana
+  ```
+  

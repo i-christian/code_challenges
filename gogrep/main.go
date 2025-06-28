@@ -14,6 +14,7 @@ func main() {
 	}
 
 	flag := strings.TrimSpace(os.Args[1])
+	// os.Pipe()
 
 	if len(os.Args) == 3 && len(flag) == 0 {
 		fileName := os.Args[2]
@@ -31,7 +32,9 @@ func main() {
 	} else if len(os.Args) > 3 {
 		word := os.Args[2]
 		if flag == "-r" && len(os.Args[3]) != 0 {
-			handlers.Recursive(word)
+			handlers.Recursive(word, false)
+		} else if flag == "-v" && len(os.Args[3]) != 0 {
+			handlers.Recursive(word, true)
 		}
 	}
 }

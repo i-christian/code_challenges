@@ -60,7 +60,7 @@ func SingleLetter(file *os.File, flag string) {
 }
 
 // Recursive supports the goal to recurse a directory tree
-func Recursive(word string) {
+func Recursive(word string, inverts bool) {
 	filePath := "."
 	files := findFiles(filePath)
 	buf := make([]string, 0)
@@ -84,8 +84,14 @@ func Recursive(word string) {
 				continue
 			}
 
-			if strings.Contains(line, word) {
-				buf = append(buf, fmt.Sprintf("%s:%s", file, line))
+			if !inverts {
+				if strings.Contains(line, word) {
+					buf = append(buf, fmt.Sprintf("%s:%s", file, line))
+				}
+			} else {
+				if !strings.Contains(line, word) {
+					buf = append(buf, fmt.Sprintf("%s:%s", file, line))
+				}
 			}
 		}
 

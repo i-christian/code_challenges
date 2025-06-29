@@ -12,25 +12,14 @@ import (
 
 // EmptyFlag function handles the empty flag grep option
 func EmptyFlag(file *os.File) {
-	buf := make([]byte, 1024)
-	for {
-		n, err := file.Read(buf)
-		if err == io.EOF {
-			break
-		}
-		if err != nil {
-			fmt.Println(err)
-			continue
-		}
-
-		if n > 0 {
-			fmt.Println(string(buf[:n]))
-		}
+	_, err := io.Copy(os.Stdout, file)
+	if err != nil {
+		fmt.Println(err.Error())
 	}
 }
 
-// SingleLetter function handles the single letter pattern
-func SingleLetter(file *os.File, flag string) {
+// WordSearch function handles the single letter pattern
+func WordSearch(file *os.File, flag string) {
 	reader := bufio.NewReader(file)
 
 	buf := make([]string, 0)
@@ -135,9 +124,5 @@ func IsExecutable(f *os.File) bool {
 
 	// Check if any of the executable bits (owner, group, or others) are set
 	// The 0111 octal bitmask represents the executable permissions for all user types.
-	if info.Mode().Perm()&0o111 != 0 {
-		return true
-	}
-
-	return false
+	return info.Mode().Perm()&0o111 != 0
 }

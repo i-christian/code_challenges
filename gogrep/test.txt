@@ -121,6 +121,7 @@ presents the reader an incredible amount of information concerning Sun
 Tzŭ’s text, much more than any other translation.
 
 The Giles’ edition of the _Art of War_, as stated above, was a
+
 scholarly work. Dr. Giles was a leading sinologue at the time and an
 assistant in the Department of Oriental Printed Books and Manuscripts
 in the British Museum. Apparently he wanted to produce a definitive
@@ -191,7 +192,8 @@ gouvernement des troupes.
 
 Throughout the nineteenth century, which saw a wonderful development in
 the study of Chinese literature, no translator ventured to tackle Sun
-Tzŭ, although his work was known to be highly valued in China as by far
+Tzŭ, although his work was known to 
+be highly valued in China as by far
 the oldest and best compendium of military science. It was not until
 the year 1905 that the first English translation, by Capt. E.F.
 Calthrop. R.F.A., appeared at Tokyo under the title “Sonshi”(the
@@ -253,7 +255,8 @@ been made directly accessible by translation.
 I may say in conclusion that, owing to the printing off of my sheets as
 they were completed, the work has not had the benefit of a final
 revision. On a review of the whole, without modifying the substance of
-my criticisms, I might have been inclined in a few instances to temper
+my criticisms, I might have been inclined in a few instan
+ces to temper
 their asperity. Having chosen to wield a bludgeon, however, I shall not
 cry out if in return I am visited with more than a rap over the
 knuckles. Indeed, I have been at some pains to put a sword into the
@@ -338,7 +341,8 @@ bid them go through fire and water, and they will not disobey."
 But the King replied: "Let our general cease drilling and return to
 camp. As for us, We have no wish to come down and inspect the troops."
 
-Thereupon Sun Tzŭ said: "The King is only fond of words, and cannot
+Thereupon Sun Tz�
+� said: "The King is only fond of words, and cannot
 translate them into deeds."
 
 After that, Ho Lu saw that Sun Tzŭ was one who knew how to handle an
@@ -410,7 +414,8 @@ no doubt has been cast upon it), we have here the earliest direct
 reference for Sun Tzŭ, for Huai-nan Tzŭ died in 122 B.C., many years
 before the _Shih Chi_ was given to the world.
 
-Liu Hsiang (80-9 B.C.) says: "The reason why Sun Tzŭ at the head of
+Liu Hsian
+g (80-9 B.C.) says: "The reason why Sun Tzŭ at the head of
 30,000 men beat Ch’u with 200,000 is that the latter were
 undisciplined."
 
@@ -476,7 +481,8 @@ we possess today. Chang Shou-chieh refers to an edition of Sun Tzŭ’s
 _Art of War_ of which the "13 chapters" formed the first _chuan_,
 adding that there were two other _chuan_ besides. This has brought
 forth a theory, that the bulk of these 82 chapters consisted of other
-writings of Sun Tzŭ—we should call them apocryphal—similar to the _Wen
+writings of Sun Tzŭ—we should call them apocryphal—sim
+ilar to the _Wen
 Ta_, of which a specimen dealing with the Nine Situations [15] is
 preserved in the _T’ung Tien_, and another in Ho Shin’s commentary. It
 is suggested that before his interview with Ho Lu, Sun Tzŭ had only
@@ -539,7 +545,8 @@ crushed Ch’u, entered Ying, and was a great general. But in Tso’s
 Commentary no Sun Wu appears at all. It is true that Tso’s Commentary
 need not contain absolutely everything that other histories contain.
 But Tso has not omitted to mention vulgar plebeians and hireling
-ruffians such as Ying K’ao-shu, [18] Ts’ao Kuei, [19], Chu Chih-wu and
+ruffians such as Ying K’ao-shu, [18] Ts’ao Kuei, [19], Chu Chih-wu an
+d
 Chuan She-chu [20]. In the case of Sun Wu, whose fame and achievements
 were so brilliant, the omission is much more glaring. Again, details
 are given, in their due order, about his contemporaries Wu Yuan and the
@@ -611,7 +618,8 @@ War_, acknowledged or otherwise, are to be found in so many authors of
 different epochs, establishes a very strong anterior to them all,—in
 other words, that Sun Tzŭ’s treatise was already in existence towards
 the end of the 5th century B.C. Further proof of Sun Tzŭ’s antiquity is
-furnished by the archaic or wholly obsolete meanings attaching to a
+furnished by the archaic or wholly obsolete meanings atta
+ching to a
 number of the words he uses. A list of these, which might perhaps be
 extended, is given in the _Hsu Lu;_ and though some of the
 interpretations are doubtful, the main argument is hardly affected
@@ -679,7 +687,8 @@ These two paragraphs are extremely valuable as evidence of the date of
 composition. They assign the work to the period of the struggle between
 Wu and Yüeh. So much has been observed by Pi I-hsun. But what has
 hitherto escaped notice is that they also seriously impair the
-credibility of Ssu-ma Ch’ien’s narrative. As we have seen above, the
+credibility of Ssu-ma Ch’ien’s narrative. 
+As we have seen above, the
 first positive date given in connection with Sun Wu is 512 B.C. He is
 then spoken of as a general, acting as confidential adviser to Ho Lu,
 so that his alleged introduction to that monarch had already taken
@@ -752,7 +761,8 @@ to its author. It was felt to be only right and proper that one so well
 versed in the science of war should have solid achievements to his
 credit as well. Now the capture of Ying was undoubtedly the greatest
 feat of arms in Ho Lu’s reign; it made a deep and lasting impression on
-all the surrounding states, and raised Wu to the short-lived zenith of
+all the surrounding states, and raised Wu to the sh
+ort-lived zenith of
 her power. Hence, what more natural, as time went on, than that the
 acknowledged master of strategy, Sun Wu, should be popularly identified
 with that campaign, at first perhaps only in the sense that his brain
@@ -820,7 +830,8 @@ T’ien-pao’s edition, although no actual copy of that important work was
 known to have survived. That, therefore, is the text of Sun Tzŭ which
 appears in the War section of the great Imperial encyclopedia printed
 in 1726, the _Ku Chin T’u Shu Chi Ch’eng_. Another copy at my disposal
-of what is practically the same text, with slight variations, is that
+of what is practically the same text, with slight v
+ariations, is that
 contained in the "Eleven philosophers of the Chou and Ch’in dynasties"
 [1758]. And the Chinese printed in Capt. Calthrop’s first edition is
 evidently a similar version which has filtered through Japanese
@@ -884,7 +895,8 @@ _I Shuo_, [39] with author’s preface, and next, a short miscellany of
 historical and bibliographical information entitled _Sun Tzŭ Hsu Lu_,
 compiled by Pi I-hsun. As regards the body of the work, each separate
 sentence is followed by a note on the text, if required, and then by
-the various commentaries appertaining to it, arranged in chronological
+the vari
+ous commentaries appertaining to it, arranged in chronological
 order. These we shall now proceed to discuss briefly, one by one.
 
 
@@ -954,7 +966,8 @@ wrongly placed after his grandson Tu Mu.
 
 5. TU MU (803-852) is perhaps the best known as a poet—a bright star
 even in the glorious galaxy of the T’ang period. We learn from Ch’ao
-Kung-wu that although he had no practical experience of war, he was
+Kung-wu that althoug
+h he had no practical experience of war, he was
 extremely fond of discussing the subject, and was moreover well read in
 the military history of the _Ch’un Ch’iu_ and _Chan Kuo_ eras. His
 notes, therefore, are well worth attention. They are very copious, and
@@ -1021,7 +1034,8 @@ Ch’en Hao in order of merit.
 his interpretations, but much less judicious than Mei Yao-ch’en, and on
 the whole not a very trustworthy guide. He is fond of comparing his own
 commentary with that of Ts’ao Kung, but the comparison is not often
-flattering to him. We learn from Ch’ao Kung-wu that Wang Hsi revised
+flattering to him. We learn from Ch’ao Kung-wu that Wang Hs
+i revised
 the ancient text of Sun Tzŭ, filling up lacunae and correcting
 mistakes. [45]
 
@@ -1096,7 +1110,8 @@ out.
 
 
 The following is an extract from the "Impartial Judgments in the Garden
-of Literature" by Cheng Hou:—
+of Literature" by C
+heng Hou:—
 
 Sun Tzŭ’s 13 chapters are not only the staple and base of all military
 men’s training, but also compel the most careful attention of scholars
@@ -1167,7 +1182,8 @@ be said of those scholars of our time, blind to all great issues, and
 without any appreciation of relative values, who can only bark out
 their stale formulas about "virtue" and "civilization," condemning the
 use of military weapons? They will surely bring our country to
-impotence and dishonour and the loss of her rightful heritage; or, at
+impotence an
+d dishonour and the loss of her rightful heritage; or, at
 the very least, they will bring about invasion and rebellion, sacrifice
 of territory and general enfeeblement. Yet they obstinately refuse to
 modify the position they have taken up. The truth is that, just as in
@@ -1237,7 +1253,8 @@ K’ung Wen-tzu, he said: I have not been instructed about buff-coats and
 weapons." But if we turn to the meeting at Chia-ku, we find that he
 used armed force against the men of Lai, so that the marquis of Ch’i
 was overawed. Again, when the inhabitants of Pi revolted; he ordered
-his officers to attack them, whereupon they were defeated and fled in
+his officers to a
+ttack them, whereupon they were defeated and fled in
 confusion. He once uttered the words: "If I fight, I conquer." [63] And
 Jan Yu also said: "The Sage exercises both civil and military
 functions." [64] Can it be a fact that Confucius never studied or
@@ -1311,7 +1328,8 @@ speaking, only concerned with things strictly military—the art of
 producing, collecting, training and drilling troops, and the correct
 theory with regard to measures of expediency, laying plans, transport
 of goods and the handling of soldiers—in strong contrast to later
-works, in which the science of war is usually blended with metaphysics,
+works, in which the science of war is usually bl
+ended with metaphysics,
 divination and magical arts in general.
 
 3. _Liu T’ao_, in 6 _chuan_, or 60 chapters. Attributed to Lu Wang (or
@@ -1407,7 +1425,8 @@ Footnotes
 
 6. _Shih Chi_, ch. 25.
 
-7. The appellation of Hu Yen, mentioned in ch. 39 under the year 637.
+7. The appellation of Hu Yen, mentioned in ch. 39 under the y
+ear 637.
 
 8. Wang-tzu Ch’eng-fu, ch. 32, year 607.
 
@@ -1507,7 +1526,8 @@ Shensi. The temple in question is still visited by those about the
 ascent of the Western Sacred Mountain. It is mentioned in a text as
 being "situated five _li_ east of the district city of Hua-yin. The
 temple contains the Hua-shan tablet inscribed by the T’ang Emperor
-Hsuan Tsung [713-755]."
+Hsuan Tsung [713-
+755]."
 
 38. See my "Catalogue of Chinese Books" (Luzac & Co., 1908), no. 40.
 
@@ -1637,7 +1657,8 @@ considered as an attribute of the _ruler_ in § 13.]
 
 
 5, 6. _The Moral Law_ causes the people to be in complete accord with
-their ruler, so that they will follow him regardless of their lives,
+their
+ ruler, so that they will follow him regardless of their lives,
 undismayed by any danger.
 
 [Tu Yu quotes Wang Tzŭ as saying: "Without constant practice, the
@@ -1741,7 +1762,8 @@ composed expressly for the benefit of his patron Ho Lu, king of the Wu
 State.]
 
 
-16. While heeding the profit of my counsel, avail yourself also of any
+16. While heeding the
+ profit of my counsel, avail yourself also of any
 helpful circumstances over and beyond the ordinary rules.
 
 17. According as circumstances are favourable, one should modify one’s
@@ -1842,7 +1864,8 @@ consideration of ways and means.]
 
 
 1. Sun Tzŭ said: In the operations of war, where there are in the field
-a thousand swift chariots, as many heavy chariots, and a hundred
+a thousand swift chariots, as many heav
+y chariots, and a hundred
 thousand mail-clad soldiers,
 
 [The "swift chariots" were lightly built and, according to Chang Yu,
@@ -1920,7 +1943,8 @@ that can thoroughly understand the profitable way of carrying it on.
 
 [That is, with rapidity. Only one who knows the disastrous effects of a
 long war can realize the supreme importance of rapidity in bringing it
-to a close. Only two commentators seem to favour this interpretation,
+to a close. Only two commentators seem t
+o favour this interpretation,
 but it fits well into the logic of the context, whereas the rendering,
 "He who does not know the evils of war cannot appreciate its benefits,"
 is distinctly pointless.]
@@ -2011,7 +2035,8 @@ the enemy, they must be used as rewards, so that all your men may have
 a keen desire to fight, each on his own account."]
 
 
-17. Therefore in chariot fighting, when ten or more chariots have been
+17. Therefore in chariot fighting,
+ when ten or more chariots have been
 taken, those should be rewarded who took the first. Our own flags
 should be substituted for those of the enemy, and the chariots mingled
 and used in conjunction with ours. The captured soldiers should be
@@ -2106,7 +2131,8 @@ repelling attacks, but this is denied by Ch’en Hao. See _supra_ II. 14.
 The name is also applied to turrets on city walls. Of the "movable
 shelters" we get a fairly clear description from several commentators.
 They were wooden missile-proof structures on four wheels, propelled
-from within, covered over with raw hides, and used in sieges to convey
+from within, covered over with raw hides, and used in sieg
+es to convey
 parties of men to and from the walls, for the purpose of filling up the
 encircling moat with earth. Tu Mu adds that they are now called "wooden
 donkeys."]
@@ -2204,7 +2230,8 @@ if quite unequal in every way, we can flee from him.
 the end it must be captured by the larger force.
 
 11. Now the general is the bulwark of the State: if the bulwark is
-complete at all points; the State will be strong; if the bulwark is
+complete at all points; the S
+tate will be strong; if the bulwark is
 defective, the State will be weak.
 
 [As Li Ch’uan tersely puts it: "Gap indicates deficiency; if the
@@ -2296,7 +2323,8 @@ unprepared.
 (5) He will win who has military capacity and is not interfered with by
 the sovereign.
 
-[Tu Yu quotes Wang Tzŭ as saying: "It is the sovereign’s function to
+[Tu Yu quo
+tes Wang Tzŭ as saying: "It is the sovereign’s function to
 give broad instructions, but to decide on battle it is the function of
 the general." It is needless to dilate on the military disasters which
 have been caused by undue interference with operations in the field on
@@ -2394,7 +2422,8 @@ heaven.
 
 [Another metaphor, implying that he falls on his adversary like a
 thunderbolt, against which there is no time to prepare. This is the
-opinion of most of the commentators.]
+opinion of most of the commen
+tators.]
 
 
 Thus on the one hand we have ability to protect ourselves; on the
@@ -2493,7 +2522,8 @@ after the victory has been won, whereas he who is destined to defeat
 first fights and afterwards looks for victory.
 
 [Ho Shih thus expounds the paradox: "In warfare, first lay plans which
-will ensure victory, and then lead your army to battle; if you will not
+will ensure victory, and then lead your army to battle; if you will 
+not
 begin with stratagem but rely on brute strength alone, victory will no
 longer be assured."]
 
@@ -2578,7 +2608,8 @@ lateral diversion is _ch’i_. Chia Lin: "In presence of the enemy, your
 troops should be arrayed in normal fashion, but in order to secure
 victory abnormal manœuvers must be employed." Mei Yao-ch’en: "_Ch’i_ is
 active, _cheng_ is passive; passivity means waiting for an opportunity,
-activity brings the victory itself." Ho Shih: "We must cause the enemy
+activity brings the victory itself." H
+o Shih: "We must cause the enemy
 to regard our straightforward attack as one that is secretly designed,
 and vice versa; thus _cheng_ may also be _ch’i_, and _ch’i_ may also be
 _cheng_." He instances the famous exploit of Han Hsin, who when
@@ -2653,7 +2684,8 @@ series of manœuvers.
 
 11. The direct and the indirect lead on to each other in turn. It is
 like moving in a circle—you never come to an end. Who can exhaust the
-possibilities of their combination?
+possibilities of their co
+mbination?
 
 12. The onset of troops is like the rush of a torrent which will even
 roll stones along in its course.
@@ -2744,7 +2776,8 @@ enemy will believe that we are really afraid."]
 masking strength with weakness is to be effected by tactical
 dispositions.
 
-[Chang Yu relates the following anecdote of Kao Tsu, the first Han
+[Chang Yu relates the following anecdote of Kao Tsu, the 
+first Han
 Emperor: “Wishing to crush the Hsiung-nu, he sent out spies to report
 on their condition. But the Hsiung-nu, forewarned, carefully concealed
 all their able-bodied men and well-fed horses, and only allowed infirm
@@ -2822,7 +2855,8 @@ to go rolling down.
 
 
 23. Thus the energy developed by good fighting men is as the momentum
-of a round stone rolled down a mountain thousands of feet in height. So
+of a round stone rolled down a mountain thousands of feet in height
+. So
 much on the subject of energy.
 
 [The chief lesson of this chapter, in Tu Mu’s opinion, is the paramount
@@ -2916,7 +2950,8 @@ IV. § 7], making it impossible for the enemy to guard against him. This
 being so, the places that I shall attack are precisely those that the
 enemy cannot defend…. He who is skilled in defence hides in the most
 secret recesses of the earth, making it impossible for the enemy to
-estimate his whereabouts. This being so, the places that I shall hold
+estimate his whereabouts. This being so, the places that I shall 
+hold
 are precisely those that the enemy cannot attack."]
 
 
@@ -3007,7 +3042,8 @@ right, he will weaken his left. If he sends reinforcements everywhere,
 he will everywhere be weak.
 
 [In Frederick the Great’s _Instructions to his Generals_ we read: "A
-defensive war is apt to betray us into too frequent detachment. Those
+defensive w
+ar is apt to betray us into too frequent detachment. Those
 generals who have had but little experience attempt to protect every
 point, while those who are better acquainted with their profession,
 having only the capital object in view, guard against a decisive blow,
@@ -3085,7 +3121,8 @@ achieved."]
 fighting. Scheme so as to discover his plans and the likelihood of
 their success.
 
-[An alternative reading offered by Chia Lin is: "Know beforehand all
+[An alternative re
+ading offered by Chia Lin is: "Know beforehand all
 plans conducive to our success and to the enemy’s failure."
 
 
@@ -3197,7 +3234,8 @@ sovereign.
 2. Having collected an army and concentrated his forces, he must blend
 and harmonise the different elements thereof before pitching his camp.
 
-["Chang Yu says: "the establishment of harmony and confidence between
+["Chang Yu says: "the establishment of harm
+ony and confidence between
 the higher and lower ranks before venturing into the field;" and he
 quotes a saying of Wu Tzŭ (chap. 1 ad init.): "Without harmony in the
 State, no military expedition can be undertaken; without harmony in the
@@ -3270,7 +3308,8 @@ raise the siege of O-yu in all haste and retreat across the border.]
 5. Manœuvering with an army is advantageous; with an undisciplined
 multitude, most dangerous.
 
-[I adopt the reading of the _T’ung Tien_, Cheng Yu-hsien and the _T’u
+[I adopt the reading of the _T’ung Tien_, Cheng Yu-hsien and the _T’
+u
 Shu_, since they appear to apply the exact nuance required in order to
 make sense. The commentators using the standard text take this line to
 mean that manœuvers may be profitable, or they may be dangerous: it all
@@ -3373,7 +3412,8 @@ your compactness that of the forest.
 [Meng Shih comes nearer to the mark in his note: "When slowly marching,
 order and ranks must be preserved"—so as to guard against surprise
 attacks. But natural forest do not grow in rows, whereas they do
-generally possess the quality of density or compactness.]
+generally possess the quality o
+f density or compactness.]
 
 
 18. In raiding and plundering be like fire,
@@ -3478,7 +3518,8 @@ Ch’in State. Before the battle had begun, one of his soldiers, a man of
 matchless daring, sallied forth by himself, captured two heads from the
 enemy, and returned to camp. Wu Ch’i had the man instantly executed,
 whereupon an officer ventured to remonstrate, saying: "This man was a
-good soldier, and ought not to have been beheaded." Wu Ch’i replied: "I
+good soldier, and ought not to have been beheaded." Wu Ch’i repli
+ed: "I
 fully believe he was a good soldier, but I had him beheaded because he
 acted without orders."]
 
@@ -3565,7 +3606,8 @@ whose temper is keen.
 
 35. Do not swallow a bait offered by the enemy.
 
-[Li Ch’uan and Tu Mu, with extraordinary inability to see a metaphor,
+[Li Ch’uan and Tu Mu, with extrao
+rdinary inability to see a metaphor,
 take these words quite literally of food and drink that have been
 poisoned by the enemy. Ch’en Hao and Chang Yu carefully point out that
 the saying has a wider application.]
@@ -3644,7 +3686,8 @@ not appear to enumerate these, and as, indeed, he has already told us
 (V §§ 6-11) that such deflections from the ordinary course are
 practically innumerable, we have little option but to follow Wang Hsi,
 who says that "Nine" stands for an indefinitely large number. "All it
-means is that in warfare we ought to vary our tactics to the utmost
+means is that in warfare we ought to vary 
+our tactics to the utmost
 degree…. I do not know what Ts’ao Kung makes these Nine Variations out
 to be, but it has been suggested that they are connected with the Nine
 Situations" - of chapt. XI. This is the view adopted by Chang Yu. The
@@ -3733,7 +3776,8 @@ securing good positions, but availing oneself of natural advantages in
 every possible way. Chang Yu says: "Every kind of ground is
 characterized by certain natural features, and also gives scope for a
 certain variability of plan. How it is possible to turn these natural
-features to account unless topographical knowledge is supplemented by
+features to account unless topographical knowledge is 
+supplemented by
 versatility of mind?"]
 
 
@@ -3822,7 +3866,8 @@ having any rest."]
 hold out specious allurements, and make them rush to any given point.
 
 [Meng Shih’s note contains an excellent example of the idiomatic use
-of: "cause them to forget _pien_ (the reasons for acting otherwise than
+of: "cause them to forget _pien_ (the rea
+sons for acting otherwise than
 on their first impulse), and hasten in our direction."]
 
 
@@ -3901,7 +3946,8 @@ trouble.
 
 [Here again, Sun Tzŭ does not mean that the general is to be careless
 of the welfare of his troops. All he wishes to emphasize is the danger
-of sacrificing any important military advantage to the immediate
+of sacrificing any im
+portant military advantage to the immediate
 comfort of his men. This is a shortsighted policy, because in the long
 run the troops will suffer more from the defeat, or, at best, the
 prolongation of the war, which will be the consequence. A mistaken
@@ -3991,7 +4037,8 @@ unlooked-for success, and exclaiming: "I felt sure that Han Hsin was
 really a coward!" he pursued him and began crossing the river in his
 turn. Han Hsin now sent a party to cut open the sandbags, thus
 releasing a great volume of water, which swept down and prevented the
-greater portion of Lung Chu’s army from getting across. He then turned
+greater portion of Lung Chu’s army
+ from getting across. He then turned
 upon the force which had been cut off, and annihilated it, Lung Chu
 himself being amongst the slain. The rest of the army, on the further
 bank, also scattered and fled in all directions.]
@@ -4100,7 +4147,8 @@ of illness."]
 
 and this will spell victory.
 
-13. When you come to a hill or a bank, occupy the sunny side, with the
+13. When you come to a hill or a bank, occupy the sunny side, with th
+e
 slope on your right rear. Thus you will at once act for the benefit of
 your soldiers and utilise the natural advantages of the ground.
 
@@ -4208,7 +4256,8 @@ across.]
 
 22. The rising of birds in their flight is the sign of an ambuscade.
 
-[Chang Yu’s explanation is doubtless right: "When birds that are flying
+[Ch
+ang Yu’s explanation is doubtless right: "When birds that are flying
 along in a straight line suddenly shoot upwards, it means that soldiers
 are in ambush at the spot beneath."]
 
@@ -4279,7 +4328,8 @@ town capitulated, he would not allow their homes to be plundered or
 their women to be maltreated. Ch’i Chieh, in high good humor, granted
 their prayer; but his army now became increasingly slack and careless.
 Meanwhile, T’ien Tan got together a thousand oxen, decked them with
-pieces of red silk, painted their bodies, dragon-like, with colored
+pieces of re
+d silk, painted their bodies, dragon-like, with colored
 stripes, and fastened sharp blades on their horns and well-greased
 rushes on their tails. When night came on, he lighted the ends of the
 rushes, and drove the oxen through a number of holes which he had
@@ -4372,7 +4422,8 @@ him. The latter pressed for hasty measures, but Sung turned a deaf ear
 to his counsel. At last the rebels were utterly worn out, and began to
 throw down their weapons of their own accord. Sung was not advancing to
 the attack, but Cho said: ‘It is a principle of war not to pursue
-desperate men and not to press a retreating host.’ Sung answered: ‘That
+desperate men and not to press a retreating host.’ Sung answered: 
+‘That
 does not apply here. What I am about to attack is a jaded army, not a
 retreating host; with disciplined troops I am falling on a disorganized
 multitude, not a band of desperate men.’ Thereupon he advances to the
@@ -4464,7 +4515,8 @@ practically useless. If, when the soldiers have become attached to you,
 punishments are not enforced, they will still be useless.
 
 43. Therefore soldiers must be treated in the first instance with
-humanity, but kept under control by means of iron discipline.
+humanity, but kept under control by
+ means of iron discipline.
 
 [Yen Tzŭ [B.C. 493] said of Ssu-ma Jang-chu: "His civil virtues
 endeared him to the people; his martial prowess kept his enemies in
@@ -4570,7 +4622,8 @@ Then you will be able to fight with advantage.
 4. Ground which can be abandoned but is hard to re-occupy is called
 _entangling_.
 
-5. From a position of this sort, if the enemy is unprepared, you may
+5. From a positio
+n of this sort, if the enemy is unprepared, you may
 sally forth and defeat him. But if the enemy is prepared for your
 coming, and you fail to defeat him, then, return being impossible,
 disaster will ensue.
@@ -4664,7 +4717,8 @@ The general who has attained a responsible post must be careful to
 study them.
 
 14. Now an army is exposed to six several calamities, not arising from
-natural causes, but from faults for which the general is responsible.
+natural causes, but from faults for which the general is responsi
+ble.
 These are: (1) Flight; (2) insubordination; (3) collapse; (4) ruin; (5)
 disorganisation; (6) rout.
 
@@ -4759,7 +4813,8 @@ practice, will win his battles. He who knows them not, nor practises
 them, will surely be defeated.
 
 23. If fighting is sure to result in victory, then you must fight, even
-though the ruler forbid it; if fighting will not result in victory,
+though the ruler forbid it; if fighting will not result in vic
+tory,
 then you must not fight even at the ruler’s bidding.
 
 [Cf. VIII. § 3 fin. Huang Shih-kung of the Ch’in dynasty, who is said
@@ -4834,7 +4889,8 @@ fact of his being also a native of Ju-nan should not be allowed to
 palliate a clear breach of discipline, and accordingly he ordered his
 summary execution, the tears rolling down his face, however, as he did
 so. This act of severity filled the army with wholesome awe, and from
-that time forth even articles dropped in the highway were not picked
+that time forth eve
+n articles dropped in the highway were not picked
 up.]
 
 
@@ -4931,7 +4987,8 @@ mettlesome. If we oppose him in the shifting sands of the desert, we
 shall be no match for him, and we must therefore try a different plan.
 Let us hasten to occupy the defile at the mouth of the Kao-wu pass,
 thus cutting him off from supplies of water, and when his troops are
-prostrated with thirst, we can dictate our own terms without moving. Or
+prost
+rated with thirst, we can dictate our own terms without moving. Or
 if you think that the pass I mention is too far off, we could make a
 stand against him at the I-wu pass, which is nearer. The cunning and
 resource of Tzŭ-fang himself would be expended in vain against the
@@ -5017,7 +5074,8 @@ awful close to the Sicilian expedition, and the agony of the Athenians
 under Nicias and Demonsthenes. [See Thucydides, VII. 78 sqq.].]
 
 
-11. On dispersive ground, therefore, fight not. On facile ground, halt
+11. On disp
+ersive ground, therefore, fight not. On facile ground, halt
 not. On contentious ground, attack not.
 
 [But rather let all your energies be bent on occupying the advantageous
@@ -5101,7 +5159,8 @@ corner."]
 
 
 15. Those who were called skilful leaders of old knew how to drive a
-wedge between the enemy’s front and rear;
+wedge between the e
+nemy’s front and rear;
 
 [More literally, "cause the front and rear to lose touch with each
 other."]
@@ -5176,7 +5235,8 @@ Fu in Hupeh. It was autumn, and the Yangtsze being then in flood, Hsiao
 Hsien never dreamt that his adversary would venture to come down
 through the gorges, and consequently made no preparations. But Li Ching
 embarked his army without loss of time, and was just about to start
-when the other generals implored him to postpone his departure until
+when the other generals implored him to postpone his 
+departure until
 the river was in a less dangerous state for navigation. Li Ching
 replied: "To the soldier, overwhelming speed is of paramount
 importance, and he must never miss opportunities. Now is the time to
@@ -5263,7 +5323,8 @@ terms."]
 
 Officers and men alike will put forth their uttermost strength.
 
-[Chang Yu says: "If they are in an awkward place together, they will
+[Cha
+ng Yu says: "If they are in an awkward place together, they will
 surely exert their united strength to get out of it."]
 
 
@@ -5346,7 +5407,8 @@ against his chest. None of the duke’s retainers dared to move a muscle,
 and Ts’ao Kuei proceeded to demand full restitution, declaring the Lu
 was being unjustly treated because she was a smaller and a weaker
 state. Huan Kung, in peril of his life, was obliged to consent,
-whereupon Ts’ao Kuei flung away his dagger and quietly resumed his
+whereupon Ts’ao Kuei flung away his dagger and q
+uietly resumed his
 place amid the terrified assemblage without having so much as changed
 color. As was to be expected, the Duke wanted afterwards to repudiate
 the bargain, but his wise old counselor Kuan Chung pointed out to him
@@ -5433,7 +5495,8 @@ text books, and to the ordinary tactical teaching, I am inclined to
 think that the study of ground is often overlooked, and that by no
 means sufficient importance is attached to the selection of positions…
 and to the immense advantages that are to be derived, whether you are
-defending or attacking, from the proper utilization of natural
+defending or attacking, from the pr
+oper utilization of natural
 features." [2] ]
 
 
@@ -5517,7 +5580,8 @@ enemy from anticipating his purpose.
 climbed up a height and then kicks away the ladder behind him. He
 carries his men deep into hostile territory before he shows his hand.
 
-[Literally, "releases the spring" (see V. § 15), that is, takes some
+[Literall
+y, "releases the spring" (see V. § 15), that is, takes some
 decisive step which makes it impossible for the army to return—like
 Hsiang Yu, who sunk his ships after crossing a river. Ch’en Hao,
 followed by Chia Lin, understands the words less well as "puts forth
@@ -5611,7 +5675,8 @@ the goal." That is, they must not be allowed to straggle up a long way
 apart. Mei Yao-ch’en offers another equally plausible explanation:
 "Supposing the enemy has not yet reached the coveted position, and we
 are behind him, we should advance with all speed in order to dispute
-its possession." Ch’en Hao, on the other hand, assuming that the enemy
+its possession." Ch’en Hao, on the other hand, assuming that t
+he enemy
 has had time to select his own ground, quotes VI. § 1, where Sun Tzŭ
 warns us against coming exhausted to the attack. His own idea of the
 situation is rather vaguely expressed: "If there is a favourable
@@ -5683,7 +5748,8 @@ being different from those previously given. Though it is impossible to
 account for the present state of Sun Tzŭ’s text, a few suggestive facts
 maybe brought into prominence: (1) Chap. VIII, according to the title,
 should deal with nine variations, whereas only five appear. (2) It is
-an abnormally short chapter. (3) Chap. XI is entitled The Nine Grounds.
+an abnormally short cha
+pter. (3) Chap. XI is entitled The Nine Grounds.
 Several of these are defined twice over, besides which there are two
 distinct lists of the corresponding variations. (4) The length of the
 chapter is disproportionate, being double that of any other except IX.
@@ -5748,7 +5814,8 @@ Hannibal, we are told, ordered a guide to lead him into the
 neighbourhood of Casinum, where there was an important pass to be
 occupied; but his Carthaginian accent, unsuited to the pronunciation of
 Latin names, caused the guide to understand Casilinum instead of
-Casinum, and turning from his proper route, he took the army in that
+Casinum, and turning from his proper route, he took the army in 
+that
 direction, the mistake not being discovered until they had almost
 arrived.]
 
@@ -5842,7 +5909,8 @@ reasons" for his decisions, and the maxim is even more applicable to a
 general than to a judge.]
 
 
-When the outlook is bright, bring it before their eyes; but tell them
+When the outlook is
+ bright, bring it before their eyes; but tell them
 nothing when the situation is gloomy.
 
 58. Place your army in deadly peril, and it will survive; plunge it
@@ -5902,7 +5970,8 @@ obliged to fight for their lives, but had allowed each man to follow
 his own discretion, there would have been a general _débandade_, and it
 would have been impossible to do anything with them." The officers
 admitted the force of his argument, and said: "These are higher tactics
-than we should have been capable of." [See _Ch’ien Han Shu_, ch. 34,
+than we should have been capable of." [See _Ch’ien Han Shu_, 
+ch. 34,
 ff. 4, 5.] ]
 
 
@@ -6015,7 +6084,8 @@ prove decisive."]
 
 68. At first, then, exhibit the coyness of a maiden, until the enemy
 gives you an opening; afterwards emulate the rapidity of a running
-hare, and it will be too late for the enemy to oppose you.
+hare, and it will be too late for the enemy to oppose you
+.
 
 [As the hare is noted for its extreme timidity, the comparison hardly
 appears felicitous. But of course Sun Tzŭ was thinking only of its
@@ -6100,7 +6170,8 @@ the same. He specifies weapons and other implements, bullion and
 clothing. Cf. VII. § 11.]
 
 
-the fifth is to hurl dropping fire amongst the enemy.
+the fifth is to hurl dropping fire amongst the ene
+my.
 
 [Tu Yu says in the _T’ung Tien:_ "To drop fire into the enemy’s camp.
 The method by which this may be done is to set the tips of arrows
@@ -6187,7 +6258,8 @@ Tzŭ, V. §§ 5, 6 and 10.] Now the rebels have pitched their camp in the
 midst of thick grass which will easily burn when the wind blows. If we
 set fire to it at night, they will be thrown into a panic, and we can
 make a sortie and attack them on all sides at once, thus emulating the
-achievement of T’ien Tan.’ [See p. 90.] That same evening, a strong
+achievement of T’ien Tan.’ [See p. 90.] That sa
+me evening, a strong
 breeze sprang up; so Huang-fu Sung instructed his soldiers to bind
 reeds together into torches and mount guard on the city walls, after
 which he sent out a band of daring men, who stealthily made their way
@@ -6270,7 +6342,8 @@ quote: "Those who want to make sure of succeeding in their battles and
 assaults must seize the favourable moments when they come and not shrink
 on occasion from heroic measures: that is to say, they must resort to
 such means of attack of fire, water and the like. What they must not
-do, and what will prove fatal, is to sit still and simply hold to the
+do, and what will prove fatal, is to sit still and simply hold to
+ the
 advantages they have got."]
 
 
@@ -6373,7 +6446,8 @@ victory which is decided in a single day. This being so, to remain in
 ignorance of the enemy’s condition simply because one grudges the
 outlay of a hundred ounces of silver in honours and emoluments,
 
-["For spies" is of course the meaning, though it would spoil the effect
+["For spies" is of course
+ the meaning, though it would spoil the effect
 of this curiously elaborate exordium if spies were actually mentioned
 at this point.]
 
@@ -6468,7 +6542,8 @@ treatment, and use them as spies."]
 this respect: "Worthy men who have been degraded from office, criminals
 who have undergone punishment; also, favourite concubines who are greedy
 for gold, men who are aggrieved at being in subordinate positions, or
-who have been passed over in the distribution of posts, others who are
+who have b
+een passed over in the distribution of posts, others who are
 anxious that their side should be defeated in order that they may have
 a chance of displaying their ability and talents, fickle turncoats who
 always want to have a foot in each boat. Officials of these several
@@ -6529,7 +6604,8 @@ boyhood, he had been wholly engrossed in the study of war and military
 matters, until at last he came to believe that there was no commander
 in the whole Empire who could stand against him. His father was much
 disquieted by this overweening conceit, and the flippancy with which he
-spoke of such a serious thing as war, and solemnly declared that if
+spoke of such a serious thing as war, and so
+lemnly declared that if
 ever Kua was appointed general, he would bring ruin on the armies of
 Chao. This was the man who, in spite of earnest protests from his own
 mother and the veteran statesman Lin Hsiang-ju, was now sent to succeed
@@ -6601,7 +6677,8 @@ relations to be maintained than with spies.
 even the general’s private sleeping-tent.]
 
 
-None should be more liberally rewarded. In no other business should
+None should be more liberally
+ rewarded. In no other business should
 greater secrecy be preserved.
 
 [Tu Mu gives a graphic touch: all communication with spies should be
@@ -6693,7 +6770,8 @@ are able to acquire and employ local and inward spies.
 
 [Tu Yu says: "through conversion of the enemy’s spies we learn the
 enemy’s condition." And Chang Yu says: "We must tempt the converted spy
-into our service, because it is he that knows which of the local
+into our service, because it is he that knows which of the loca
+l
 inhabitants are greedy of gain, and which of the officials are open to
 corruption."]
 
@@ -6798,7 +6876,8 @@ law means that no one owns a United States copyright in these works,
 so the Foundation (and you!) can copy and distribute it in the
 United States without permission and without paying copyright
 royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
+of this license, 
+apply to copying and distributing Project
 Gutenberg-tm electronic works to protect the PROJECT GUTENBERG-tm
 concept and trademark. Project Gutenberg is a registered trademark,
 and may not be used if you charge for an eBook, except by following
@@ -6870,7 +6949,8 @@ you share it without charge with others.
 what you can do with this work. Copyright laws in most countries are
 in a constant state of change. If you are outside the United States,
 check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
+agreement before dow
+nloading, copying, displaying, performing,
 distributing or creating derivative works based on this work or any
 other Project Gutenberg-tm work. The Foundation makes no
 representations concerning the copyright status of any work in any
@@ -6944,7 +7024,8 @@ provided that:
 
 * You pay a royalty fee of 20% of the gross profits you derive from
   the use of Project Gutenberg-tm works calculated using the method
-  you already use to calculate your applicable taxes. The fee is owed
+  you already use to calculate your applicable taxes. T
+he fee is owed
   to the owner of the Project Gutenberg-tm trademark, but he has
   agreed to donate royalties under this paragraph to the Project
   Gutenberg Literary Archive Foundation. Royalty payments must be paid
@@ -7018,7 +7099,8 @@ opportunity to receive the work electronically in lieu of a refund. If
 the second copy is also defective, you may demand a refund in writing
 without further opportunities to fix the problem.
 
-1.F.4. Except for the limited right of replacement or refund set forth
+1.F.4. Except for the limited right of replacement or refun
+d set forth
 in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO
 OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
 LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
@@ -7095,7 +7177,8 @@ charities and charitable donations in all 50 states of the United
 States. Compliance requirements are not uniform and it takes a
 considerable effort, much paperwork and many fees to meet and keep up
 with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
+where we have not rece
+ived written confirmation of compliance. To SEND
 DONATIONS or determine the status of compliance for any particular
 state visit www.gutenberg.org/donate
 
@@ -7134,4 +7217,5 @@ This website includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
+
 

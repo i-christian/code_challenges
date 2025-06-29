@@ -71,6 +71,12 @@ func Recursive(word string, inverts bool) {
 			fmt.Println(err.Error())
 			continue
 		}
+		defer f.Close()
+
+		// check if file is executable and skip reading it if it is
+		if IsExecutable(f) {
+			continue
+		}
 
 		reader := bufio.NewReader(f)
 
@@ -122,4 +128,16 @@ func findFiles(rootPath string) []string {
 	})
 
 	return files
+}
+
+func IsExecutable(f *os.File) bool {
+	info, _ := f.Stat()
+
+	// Check if any of the executable bits (owner, group, or others) are set
+	// The 0111 octal bitmask represents the executable permissions for all user types.
+	if info.Mode().Perm()&0o111 != 0 {
+		return true
+	}
+
+	return false
 }

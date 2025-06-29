@@ -24,10 +24,13 @@ func main() {
 		}
 		defer file.Close()
 
-		if len(flag) == 0 {
-			handlers.EmptyFlag(file)
-		} else if len(flag) == 1 {
-			handlers.SingleLetter(file, flag)
+		// check if file is executable and skip reading it if it is
+		if !handlers.IsExecutable(file) {
+			if len(flag) == 0 {
+				handlers.EmptyFlag(file)
+			} else if len(flag) == 1 {
+				handlers.SingleLetter(file, flag)
+			}
 		}
 	} else if len(os.Args) > 3 {
 		word := os.Args[2]

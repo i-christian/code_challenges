@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"strings"
@@ -16,13 +17,24 @@ func main() {
 	}
 
 	if fi.Mode()&os.ModeNamedPipe == 0 {
-		handleOptions()
+		handleOptions(nil)
 	} else {
-		fmt.Println("hi pipe!")
+		r, w := io.Pipe()
+		defer r.Close()
+
+		go func() {
+			defer w.Close()
+			_, _ = io.Copy(w, os.Stdin)
+		}()
+
+		handleOptions(r)
 	}
 }
 
-func handleOptions() {
+func handleOptions(pipedInput *io.PipeReader) {
+	if pipedInput != nil {
+		_, _ = io.Copy(os.Stdout, pipedInput)
+	}
 	if len(os.Args) < 3 {
 		log.Printf("Not enough command line arguments.\nUsage: gogrep [flag] filename")
 		os.Exit(1)

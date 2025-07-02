@@ -35,6 +35,7 @@ func handleOptions(pipedInput *io.PipeReader) {
 	if pipedInput != nil {
 		_, _ = io.Copy(os.Stdout, pipedInput)
 	}
+
 	if len(os.Args) < 3 {
 		log.Printf("Not enough command line arguments.\nUsage: gogrep [flag] filename")
 		os.Exit(1)
@@ -44,26 +45,30 @@ func handleOptions(pipedInput *io.PipeReader) {
 
 	if len(os.Args) > 3 {
 		word := os.Args[2]
-		if flag == "-r" && len(os.Args[3]) != 0 {
-			handlers.Recursive(word, false)
-		} else if flag == "-v" && len(os.Args[3]) != 0 {
-			handlers.Recursive(word, true)
+
+		if os.Args[3] == "*" && flag == "-r" {
+			handlers.Recursive(word)
+		} else {
+			fileName := os.Args[3]
+			file := handlers.OpenFile(fileName)
+			defer file.Close()
+
+			switch flag {
+			case "-i":
+				handlers.InvertSearch(file, word)
+			case "-v":
+				handlers.InvertSearch(file, word)
+			}
 		}
 	} else {
 		fileName := os.Args[2]
-		file, err := os.Open(fileName)
-		if err != nil {
-			log.Fatal(err.Error())
-		}
+		file := handlers.OpenFile(fileName)
 		defer file.Close()
 
-		// check if file is executable and skip reading it if it is
-		if !handlers.IsExecutable(file) {
-			if len(flag) >= 1 {
-				handlers.WordSearch(file, flag)
-			} else {
-				handlers.EmptyFlag(file)
-			}
+		if len(flag) >= 1 {
+			handlers.WordSearch(file, flag)
+		} else {
+			handlers.EmptyFlag(file)
 		}
 	}
 }

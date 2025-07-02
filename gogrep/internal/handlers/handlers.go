@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"io/fs"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -16,6 +17,52 @@ func EmptyFlag(file *os.File) {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+}
+
+// IgnoreCaseSearch function ignores the case of your search parameter and search for both upper and lower case variations.
+func IgnoreCaseSearch(file *os.File, word string) {
+	reader := bufio.NewReader(file)
+
+	buf := make([]string, 0)
+	for {
+		line, err := reader.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+
+		if strings.Contains(strings.ToLower(line), strings.ToLower(word)) {
+			buf = append(buf, line)
+		}
+	}
+
+	printMatches(buf)
+}
+
+// InvertSearch function returns all lines that do not contain the specified pattern
+func InvertSearch(file *os.File, word string) {
+	reader := bufio.NewReader(file)
+
+	buf := make([]string, 0)
+	for {
+		line, err := reader.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+
+		if !strings.Contains(line, word) {
+			buf = append(buf, line)
+		}
+	}
+
+	printMatches(buf)
 }
 
 // WordSearch function handles the single letter pattern
@@ -38,18 +85,11 @@ func WordSearch(file *os.File, flag string) {
 		}
 	}
 
-	if len(buf) == 0 {
-		os.Exit(1)
-	} else {
-		for _, line := range buf {
-			fmt.Print(line)
-		}
-		os.Exit(0)
-	}
+	printMatches(buf)
 }
 
 // Recursive supports the goal to recurse a directory tree
-func Recursive(word string, inverts bool) {
+func Recursive(word string) {
 	filePath := "."
 	files := findFiles(filePath)
 	buf := make([]string, 0)
@@ -79,27 +119,14 @@ func Recursive(word string, inverts bool) {
 				continue
 			}
 
-			if !inverts {
-				if strings.Contains(line, word) {
-					buf = append(buf, fmt.Sprintf("%s:%s", file, line))
-				}
-			} else {
-				if !strings.Contains(line, word) {
-					buf = append(buf, fmt.Sprintf("%s:%s", file, line))
-				}
+			if strings.Contains(line, word) {
+				buf = append(buf, fmt.Sprintf("%s:%s", file, line))
 			}
 		}
 
 	}
 
-	if len(buf) == 0 {
-		os.Exit(1)
-	} else {
-		for _, line := range buf {
-			fmt.Print(line)
-		}
-		os.Exit(0)
-	}
+	printMatches(buf)
 }
 
 func findFiles(rootPath string) []string {
@@ -117,6 +144,32 @@ func findFiles(rootPath string) []string {
 	})
 
 	return files
+}
+
+func printMatches(buf []string) {
+	if len(buf) == 0 {
+		os.Exit(1)
+	} else {
+		for _, line := range buf {
+			fmt.Print(line)
+		}
+		os.Exit(0)
+	}
+}
+
+func OpenFile(name string) *os.File {
+	file, err := os.Open(name)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
+	ok := IsExecutable(file)
+	if ok {
+		fmt.Printf("%s: binary file matches\n", name)
+		os.Exit(1)
+	}
+
+	return file
 }
 
 func IsExecutable(f *os.File) bool {

@@ -35,6 +35,7 @@ func IgnoreCaseSearch(file *os.File, word string) {
 		}
 
 		if strings.Contains(strings.ToLower(line), strings.ToLower(word)) {
+			fmt.Println(line, word)
 			buf = append(buf, line)
 		}
 	}

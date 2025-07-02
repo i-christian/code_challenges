@@ -37,4 +37,11 @@ The Unix command line tools are a great metaphor for good software engineering a
   test-subdir/BFS1985.txt:And bring back Springsteen, Madonna, way before Nirvana
   test-subdir/BFS1985.txt:Bruce Springsteen, Madonna, way before Nirvana
   ```
+- Piping mode
+  ```
+    ./gogrep -r Nirvana * | ./gogrep -i Madonna
+    README.md:   $ ./gogrep -r Nirvana *
+    README.md:  rockbands.txt:Nirvana
+    rockbands.txt:Nirvana
+  ```
   

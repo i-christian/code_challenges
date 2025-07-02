@@ -17,7 +17,7 @@ func main() {
 	}
 
 	if fi.Mode()&os.ModeNamedPipe == 0 {
-		handleOptions(nil)
+		processInput(nil)
 	} else {
 		r, w := io.Pipe()
 		defer r.Close()
@@ -27,13 +27,25 @@ func main() {
 			_, _ = io.Copy(w, os.Stdin)
 		}()
 
-		handleOptions(r)
+		processInput(r)
 	}
 }
 
-func handleOptions(pipedInput *io.PipeReader) {
+func processInput(pipedInput *io.PipeReader) {
+	flag := strings.TrimSpace(os.Args[1])
 	if pipedInput != nil {
-		_, _ = io.Copy(os.Stdout, pipedInput)
+		f, err := os.CreateTemp("", "temp")
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer os.Remove(f.Name())
+
+		_, err = io.Copy(f, pipedInput)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		handleOptions(flag, f.Name())
 	}
 
 	if len(os.Args) < 3 {
@@ -41,27 +53,43 @@ func handleOptions(pipedInput *io.PipeReader) {
 		os.Exit(1)
 	}
 
-	flag := strings.TrimSpace(os.Args[1])
+	handleOptions(flag, "")
+}
 
-	if len(os.Args) > 3 {
+func handleOptions(input ...string) {
+	flag := input[0]
+	tempFile := input[1]
+	var fileName string
+
+	if len(os.Args) > 3 || len(tempFile) > 0 {
 		word := os.Args[2]
 
 		if flag == "-r" {
 			handlers.Recursive(word)
 		} else {
-			fileName := os.Args[3]
+			if len(strings.TrimSpace(tempFile)) > 0 {
+				fileName = tempFile
+			} else {
+				fileName = os.Args[3]
+			}
+
 			file := handlers.OpenFile(fileName)
 			defer file.Close()
 
 			switch flag {
 			case "-i":
-				handlers.InvertSearch(file, word)
+				handlers.IgnoreCaseSearch(file, word)
 			case "-v":
 				handlers.InvertSearch(file, word)
 			}
 		}
 	} else {
-		fileName := os.Args[2]
+		if len(strings.TrimSpace(tempFile)) > 0 {
+			fileName = tempFile
+		} else {
+			fileName = os.Args[2]
+		}
+
 		file := handlers.OpenFile(fileName)
 		defer file.Close()
 

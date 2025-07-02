@@ -61,7 +61,7 @@ func handleOptions(input ...string) {
 	tempFile := input[1]
 	var fileName string
 
-	if len(os.Args) > 3 || len(tempFile) > 0 {
+	if len(os.Args) > 3 || (len(tempFile) > 0 && len(os.Args) == 3) {
 		word := os.Args[2]
 
 		if flag == "-r" {
@@ -83,7 +83,7 @@ func handleOptions(input ...string) {
 				handlers.InvertSearch(file, word)
 			}
 		}
-	} else {
+	} else if len(os.Args) == 3 {
 		if len(strings.TrimSpace(tempFile)) > 0 {
 			fileName = tempFile
 		} else {
@@ -98,5 +98,9 @@ func handleOptions(input ...string) {
 		} else {
 			handlers.EmptyFlag(file)
 		}
+	} else {
+		log.Printf("Not enough command line arguments.\nUsage: ./gogrep [flag] filename")
+		os.Exit(1)
+
 	}
 }

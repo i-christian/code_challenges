@@ -46,7 +46,7 @@ func handleOptions(pipedInput *io.PipeReader) {
 	if len(os.Args) > 3 {
 		word := os.Args[2]
 
-		if os.Args[3] == "*" && flag == "-r" {
+		if flag == "-r" {
 			handlers.Recursive(word)
 		} else {
 			fileName := os.Args[3]

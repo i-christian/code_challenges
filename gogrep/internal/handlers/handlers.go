@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 )
 
@@ -124,6 +125,30 @@ func Recursive(word string) {
 			}
 		}
 
+	}
+
+	printMatches(buf)
+}
+
+// DigitRegex function performs a regex search for digits
+func DigitRegex(file *os.File, flag string) {
+	reader := bufio.NewReader(file)
+	re, _ := regexp.Compile(`\d+`)
+
+	buf := make([]string, 0)
+	for {
+		line, err := reader.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+
+		if re.MatchString(line) {
+			buf = append(buf, line)
+		}
 	}
 
 	printMatches(buf)

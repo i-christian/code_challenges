@@ -93,7 +93,9 @@ func handleOptions(input ...string) {
 		file := handlers.OpenFile(fileName)
 		defer file.Close()
 
-		if len(flag) >= 1 {
+		if flag == `\d` {
+			handlers.DigitRegex(file, flag)
+		} else if len(flag) >= 1 {
 			handlers.WordSearch(file, flag)
 		} else {
 			handlers.EmptyFlag(file)

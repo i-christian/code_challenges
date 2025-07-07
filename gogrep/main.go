@@ -95,6 +95,8 @@ func handleOptions(input ...string) {
 
 		if flag == `\d` {
 			handlers.DigitRegex(file, flag)
+		} else if flag == `\w` {
+			handlers.WordRegex(file, flag)
 		} else if len(flag) >= 1 {
 			handlers.WordSearch(file, flag)
 		} else {
